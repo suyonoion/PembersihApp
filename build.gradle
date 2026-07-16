@@ -8,3 +8,11 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0"
     }
 }
+
+// Injeksi koordinat gudang pasokan bahan baku
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
