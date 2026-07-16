@@ -14,8 +14,10 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         
-    - name: Injeksi Mesin Gradle Server
+    - name: Injeksi Mesin Gradle Server (Dikalibrasi)
       uses: gradle/actions/setup-gradle@v3
+      with:
+        gradle-version: '8.4'
       
     - name: Eksekusi Kompilasi Langsung
       run: gradle assembleDebug
